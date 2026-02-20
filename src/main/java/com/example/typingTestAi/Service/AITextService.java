@@ -25,9 +25,7 @@ public class AITextService {
         Map<String, Object> reqBody = new HashMap<>();
 
         reqBody.put("model", "tinyllama");
-        reqBody.put("prompt", "Write exactly 120 words for typing practice about discipline. " +
-                "Do not use commas, periods, numbers, symbols, or any punctuation. " +
-                "Return only the paragraph.");
+        reqBody.put("prompt", "Generate only one continuous paragraph of 140 to 170 words in very simple English about any random everyday topic chosen internally. Do not write a title. Do not mention the topic name separately. Do not use exclamation marks. Do not use commas. Do not use colons. Do not use semicolons. Do not use dashes. Do not use quotation marks. Do not use brackets. Do not use bullet points. Do not use numbering. Do not create sections. Do not create lists. Do not create headings. Do not create introduction or conclusion labels. Do not use special characters or symbols. Use only full stops as punctuation. Do not create new lines. Output only the paragraph text and nothing else.");
         reqBody.put("stream", false);
 
 
